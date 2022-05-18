@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1, button {
+    color: hsl(0, 0%, 95%);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+button {
+    border: none;
+    height: 4rem;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.container {
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 5rem;
+}
+
+.sedan {
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: hsl(31, 77%, 52%);
+    padding: 2rem 3rem 2rem 3rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sedan .icon {
+    grid-row: 1 / span 1;
+    padding-left: 1.5rem;
+}
+
+.sedan .headline {
+    grid-row: 2 / span 1;
+    padding-left: 1.5rem;
+}
+
+.sedan p {
+    grid-row: 3 / span 1;
+    margin-top: 3rem;
+    padding-left: 1.5rem;
+}
+
+.sedan button {
+    grid-row: 4 / span 1;
+    padding-left: 1.5rem;
+    color: hsl(31, 77%, 52%);
+}
+
+
+.suv {
+    grid-column: 3 / span 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    background-color: hsl(184, 100%, 22%);
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.suv .icon {
+    grid-row: 1 / span 1;
+    padding-left: 1.5rem;
+}
+
+.suv .headline {
+    grid-row: 2 / span 1;
+    padding-left: 1.5rem;
+}
+
+.suv p {
+    grid-row: 3 / span 1;
+    padding-left: 1.5rem;
+    margin-top: 3rem;
+}
+
+.suv button {
+    grid-row: 4 / span 1;
+    padding-left: 1.5rem;
+    color: hsl(184, 100%, 22%);
+}
+
+
+
+.luxury {
+    grid-column: 4 / span 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    background-color: hsl(179, 100%, 13%);
+    padding: 2rem 3rem 2rem 3rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.luxury .icon {
+    grid-row: 1 / span 1;
+    padding-left: 1.5rem;
+}
+
+.luxury .headline {
+    grid-row: 2 / span 1;
+    padding-left: 1.5rem;
+}
+
+.luxury p {
+    grid-row: 3 / span 1;
+    padding-left: 1.5rem;
+    margin-top: 3rem;
+}
+
+.luxury button {
+    grid-row: 4 / span 1;
+    padding-left: 1.5rem;
+    color: hsl(179, 100%, 13%);
+}
